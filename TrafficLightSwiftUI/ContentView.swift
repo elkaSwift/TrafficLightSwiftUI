@@ -6,19 +6,54 @@
 //
 
 import SwiftUI
+enum CurrentLight {
+    case red, yellow, green
+}
 
 struct ContentView: View {
+    
+    @State private var currentLightning = CurrentLight.red
+    @State private var redOpacity = 0.5
+    @State private var yellowOpacity = 0.5
+    @State private var greenOpacity = 0.5
+    @State private var title = "Start"
+    
     var body: some View {
-        
         VStack {
-            ColorCircle(color: .red)
+            
+            ColorCircle(color: .red, opacity: (redOpacity))
                 .padding(.bottom, 20)
-            ColorCircle(color: .yellow)
+            ColorCircle(color: .yellow, opacity: (yellowOpacity))
                 .padding(.bottom, 20)
-            ColorCircle(color: .green)
-           
+            ColorCircle(color: .green, opacity: (greenOpacity))
+                .padding(.bottom, 50)
+            Button {
+                title = "Next"
+                switch currentLightning {
+                case .red:
+                    redOpacity = 1
+                    yellowOpacity = 0.5
+                    greenOpacity = 0.5
+                    currentLightning = .yellow
+                case .yellow:
+                    redOpacity = 0.5
+                    yellowOpacity = 1
+                    greenOpacity = 0.5
+                    currentLightning = .green
+                case .green:
+                    redOpacity = 0.5
+                    yellowOpacity = 0.5
+                    greenOpacity = 1
+                    currentLightning = .red
+                }
+            } label: {
+                Text(title)
+                
+            }
+            .font(.system(size: 35))
         }
         
+            
     }
 }
 

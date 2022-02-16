@@ -22,11 +22,14 @@ struct ContentView: View {
         VStack {
             
             ColorCircle(color: .red, opacity: (redOpacity))
-                .padding(.bottom, 20)
+            Spacer()
+//                .padding(.bottom, 20)
             ColorCircle(color: .yellow, opacity: (yellowOpacity))
-                .padding(.bottom, 20)
+            Spacer()
+//                .padding(.bottom, 20)
             ColorCircle(color: .green, opacity: (greenOpacity))
-                .padding(.bottom, 50)
+            Spacer()
+//                .padding(.bottom, 50)
             Button {
                 title = "Next"
                 switch currentLightning {
@@ -52,7 +55,8 @@ struct ContentView: View {
             }
             .font(.system(size: 35))
         }
-        
+        .padding(.top, 10)
+        .padding(.bottom, 10)
             
     }
 }

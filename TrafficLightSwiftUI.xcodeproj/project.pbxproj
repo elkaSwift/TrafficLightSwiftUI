@@ -11,6 +11,7 @@
 		1C0D121927BC221E00EC913D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D121827BC221E00EC913D /* ContentView.swift */; };
 		1C0D121B27BC222100EC913D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0D121A27BC222100EC913D /* Assets.xcassets */; };
 		1C0D121E27BC222100EC913D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0D121D27BC222100EC913D /* Preview Assets.xcassets */; };
+		1C0D122527BC248C00EC913D /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D122427BC248C00EC913D /* ColorCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1C0D121827BC221E00EC913D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C0D121A27BC222100EC913D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C0D121D27BC222100EC913D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C0D122427BC248C00EC913D /* ColorCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				1C0D121627BC221E00EC913D /* TrafficLightSwiftUIApp.swift */,
+				1C0D122427BC248C00EC913D /* ColorCircle.swift */,
 				1C0D121827BC221E00EC913D /* ContentView.swift */,
 				1C0D121A27BC222100EC913D /* Assets.xcassets */,
 				1C0D121C27BC222100EC913D /* Preview Content */,
@@ -139,6 +142,7 @@
 			files = (
 				1C0D121927BC221E00EC913D /* ContentView.swift in Sources */,
 				1C0D121727BC221E00EC913D /* TrafficLightSwiftUIApp.swift in Sources */,
+				1C0D122527BC248C00EC913D /* ColorCircle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
